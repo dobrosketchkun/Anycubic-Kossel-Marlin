@@ -31,8 +31,10 @@
 #define IS_RAMPS_EFB
 
 #include "pins_RAMPS_13.h"
-
-#define FAN2_PIN           44
+#define FAN1_PIN 7
+#define FAN2_PIN 44
+#define HEATER_1_PIN 45
+#define TEMP_3_PIN 12
 
 #undef E1_STEP_PIN
 #undef E1_DIR_PIN

@@ -60,7 +60,7 @@
 /* Heat Bed
  * Uncomment if you have a heat bed on your printer
  */
-//#define HEAT_BED
+#define HEAT_BED
 
 /* Delta Height
  * Printable height of your printer in mm
@@ -68,7 +68,7 @@
  * I recommend to get them from autocalibration 
  * NEEDS EEPROM CLEAR!!
  */
-#define DELTA_HEIGHT 240
+#define DELTA_HEIGHT 300
 
 /* Steppers Direction
  * Uncomment if your stepper move backwards
@@ -98,9 +98,9 @@
  */
 //#define BLTOUCH
 //#define INDUCTIVE
-//#define NO_PROBE
-//#define NC_PROBE
-#define PROBE_MANUALLY
+#define NO_PROBE
+#define NC_PROBE
+//#define PROBE_MANUALLY
 
 /* Z-Probe Offset From The Nozzle
  * Using scoth tape fix a piece of paper to your bed, then home
@@ -112,14 +112,14 @@
  */
 #define ZPROBE_X_OFFSET        0
 #define ZPROBE_Y_OFFSET        0
-#define ZPROBE_Z_OFFSET        0
+#define ZPROBE_Z_OFFSET        -14.8
 
 /* Bed Leveling Type
  * Type of bed leveling you want to use.
  * You can choose one, even if you don't have a z probe (Manual probing)
  * or not use one at all.
  */
-//#define AUTO_BED_LEVELING_LINEAR
+#define AUTO_BED_LEVELING_LINEAR
 //#define AUTO_BED_LEVELING_BILINEAR
 //#define AUTO_BED_LEVELING_UBL
 
@@ -130,7 +130,7 @@
  * Keep a low value for manual leveling
  * Use odd values for linear and bilinear
  */
-#define GRID_POINTS        7
+#define GRID_POINTS        3
 
 /* Bed Margin For Probing
  * Margin around perimiter of bed for probing
